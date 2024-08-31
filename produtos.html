@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
+
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./produtosStaly.css">
@@ -211,7 +212,7 @@
 
                 <div class="col-lg-3 d-flex justify-content-center">
                     <div class="w-100 col-lg-10 col-md-6 col-sm-12 produtosPromoção">
-                        <h2 class="background d-flex justify-content-center mt-2">Promoção</h2>
+                        <h2 class="background d-flex justify-content-center mt-2 fs-1">Promoção</h2>
                         <article class="card text-bg-dark p-2 mt-3">
                             <header class="card-header p-0">
                             </header>
@@ -284,11 +285,32 @@
             </div>
         </div>
 
+        <div>
+            <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5>Pera aí!</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>O site a seguir ainda está em desenvolvimento, Obrigado pela compreensão.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cancelar</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
-                <header class="toast-header">
-                    <strong>Importamte</strong>
-                </header>
+                <div class="toast-header">
+                    <strong class="me-auto">Importante</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
                 <div class="toast-body">
                     Você possui 10 mensagens não lidas
                     <div class="mt-2 pt-2 border-top">
@@ -324,5 +346,6 @@
     </main>
 
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

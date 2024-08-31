@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -132,9 +133,10 @@
 
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
-                <header class="toast-header">
-                    <strong>Importamte</strong>
-                </header>
+                <div class="toast-header">
+                    <strong class="me-auto">Importante</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
                 <div class="toast-body">
                     Você possui 10 mensagens não lidas
                     <div class="mt-2 pt-2 border-top">
@@ -169,7 +171,7 @@
         </footer>
     </main>
 
-    <script src="./index.js"></script>
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
