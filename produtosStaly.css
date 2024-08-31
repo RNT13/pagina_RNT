@@ -1,0 +1,9 @@
+.produtos .discount {
+    display: none;
+}
+
+.produtosPromoção .fullPrice {
+    opacity: 0.7;
+    text-decoration: line-through;
+    color: red;
+}

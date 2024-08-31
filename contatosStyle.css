@@ -1,0 +1,35 @@
+table th,
+table tfoot {
+    font-size: 50px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    width: 100%;
+    margin: 10px 1px 30px 1px;
+}
+
+#ddiContato {
+    width: 55px;
+}
+
+table {
+    max-width: 100%;
+    width: 70%;
+    color: #DBD3D8;
+}
+
+table th {
+    text-align: center;
+    border: 1px solid #2E5E4E;
+    padding: 8px;
+    font-size: 25px;
+}
+
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0;
+}

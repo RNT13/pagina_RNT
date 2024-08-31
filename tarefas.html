@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./tarefasStyle.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="barraSuperior d-flex justify-content-end">
+                <img type="button" class="imgLink" src="./imagens/config icone.png" alt="icone de engrenagens">
+                <img id="btn-checar-emails" type="button" class="imgLink" src="./imagens/sino icone.png" alt="icone de um sino">
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="d-flex">
+                        <img src="./imagens/tarefas icone.png" alt="icone de uma lista">
+                        <h1>Tarefas</h1>
+                    </div>
+                    <button class="navbar-toggler hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                    
+                    <div class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li>
+                                <div class="nav-item">
+                                    <a href="index.html">
+                                        <button class="btn btn-primary w-100 nav-link ">Home</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="produtos.html">
+                                        <button class="btn btn-primary w-100 nav-link">Produtos</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="contatos.html">
+                                        <button class="btn btn-primary w-100 nav-link">Contatos</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="faleConosco.html">
+                                        <button class="btn btn-primary w-100 nav-link active">Tarefas</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="faleConosco.html">
+                                        <button class="btn btn-primary w-100 nav-link">Fale Conosco</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="cadastro.html">
+                                        <button class="btn btn-primary w-100 nav-link">Cadastro</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="apps.html">
+                                        <button class="btn btn-primary w-100 nav-link">Apps</button>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class=" d-flex justify-content-center">
+                <div class="background ">
+                    <div class="listaDeTarefas container">
+                        <div>
+                            <form class=" d-flex align-items-center formTarefas" id="toDoList">
+                                <input class="form-control w-100 m-1" type="text" id="nomeDaTarefa" placeholder="Insira a tarefa" required>
+                                <input class="form-control w-50 " type="date" id="dataDaTarefa" placeholder="Insira a data" required>
+                                <button class="btn btn-success m-1" type="submit">Adicionar</button>
+                            </form>
+                        </div>
+                        <div >
+                            <h2 class="d-flex justify-content-center fs-1">Suas tarefas!</h2>
+                            <div class="d-flex justify-content-center bg-dark p-0 m-1">
+                                <ul class="m-0 p-0 w-100 list-unstyled">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        &copy; RNT projects - all rights reserved 2024
+                    </div>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li class="m-1">
+                                <a href="https://github.com/RNT13" target="_blank">
+                                    <img class="imgLink" src="./imagens/icone git hub.png" alt="icone do github">
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="#" target="_blank">
+                                    <img class="imgLink" src="./imagens/icone linkedin.png" alt="icone do linkedin">
+                                </a>
+                            </li>            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./tarefasScript.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

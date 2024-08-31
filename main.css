@@ -1,0 +1,204 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(./imagens/background.webp);
+}
+
+header, footer {
+    background-color: #2E5E4E;
+    color: #DBD3D8;
+    padding: 16px 0;
+}
+
+header {
+    border-bottom: 10px solid #23463a ;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+header h1, section h2 {
+    font-size: 50px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+}
+
+header img,
+.navbar-brand img {
+    height: 60px;
+    margin: 0 16px;
+}
+
+/* Alinhamento e posicionamento do menu*/
+.navbar-nav button.nav-link.active {
+    color: #2E5E4E;
+    background-color: #93aa96;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+#apps {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-width: 95%;
+    padding-left: 5%;
+}
+
+#botao-lateral {
+    color: #2E5E4E;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #93aa96;
+    position: relative;
+}
+
+#drop-menu {
+    background-color: #93aa96;
+    position: absolute;
+    max-width: 20%;
+    top: 95%;
+    left: auto;
+    right: 1px;
+}
+
+#drop-menu a {
+    color: #2E5E4E;
+}
+
+#drop-menu a:hover {
+    background-color: #2E5E4E;
+    color: #93aa96;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+}
+
+section {
+    min-height: 50vw;
+    padding: 20px;
+}
+
+.background {
+    border: 10px solid #23463a ;
+    background-color: #2E5E4E;
+    border-radius: 10px;
+    padding: 10px;
+    color: #DBD3D8;
+}
+
+footer {
+    border-top: 10px solid #23463a ;
+    padding: 14px;
+    width: 100%;
+}
+
+section button,
+.hamburguer,
+input,
+table,
+.background,
+header,
+footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin: 0;
+}
+
+.barraSuperior {
+    padding: 1% 1% 0% 0%;
+}
+
+.imgLink {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.modal {
+    margin-top: 10%;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.error {
+    color: red;
+}
+
+@media screen and (max-width: 767px) {
+    .sobreMim {
+        font-size: 1em;
+    }
+
+    .formContatos {
+        flex-direction: column;
+    }
+
+    .formTarefas {
+        flex-direction: column;
+    }
+
+    #nomeDaTarefa {
+        max-width: 100%;
+    }
+
+    .fale {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .sobreMim {
+        font-size: 1.5em;
+    }
+
+    .faleCorpo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fale {
+        font-size: 2em;
+    }
+
+    .cadastro {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobreMim {
+        font-size: 2em;
+    }
+
+    .faleCorpo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fale {
+        font-size: 2em;
+    }
+
+    .cadastro {
+        display: flex;
+        justify-content: center;
+    }
+}

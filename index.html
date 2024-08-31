@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="barraSuperior d-flex justify-content-end">
+                <img type="button" class="imgLink" src="./imagens/config icone.png" alt="icone de engrenagens">
+                <img id="btn-checar-emails" type="button" class="imgLink" src="./imagens/sino icone.png" alt="icone de um sino">
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="d-flex">
+                        <img src="./imagens/Home icone.png" alt="icone de uma casa">
+                        <h1>Home</h1>
+                    </div>
+                    <button class="navbar-toggler hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+                    <div class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li>
+                                <div class="nav-item">
+                                    <a href="#">
+                                        <button class="btn btn-primary w-100 nav-link active">Home</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="produtos.html">
+                                        <button class="btn btn-primary w-100 nav-link">Produtos</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="contatos.html">
+                                        <button class="btn btn-primary w-100 nav-link">Contatos</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="tarefas.html">
+                                        <button class="btn btn-primary w-100 nav-link ">Tarefas</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="faleConosco.html">
+                                        <button class="btn btn-primary w-100 nav-link">Fale Conosco</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="cadastro.html">
+                                        <button class="btn btn-primary w-100 nav-link">Cadastro</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="apps.html">
+                                        <button class="btn btn-primary w-100 nav-link">Apps</button>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container sobreMim">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="background">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <h2 class="d-flex justify-content-center">
+                                        Sobre mim.
+                                    </h2>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div>
+                                        <img class="w-100" src="imagens/RNT.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div>
+                                        <p class="">
+                                            Sou um programador júnior, com muita vontade de aprender e exercer tudo que estou aprendendo no meu curso de desenvolverdor full stack python, estou muito feliz de ter me encontrado profissionalmente depois de muito tempo de busca.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5>Pera aí!</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>O site a seguir ainda está em desenvolvimento, Obrigado pela compreensão.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cancelar</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+                <header class="toast-header">
+                    <strong>Importamte</strong>
+                </header>
+                <div class="toast-body">
+                    Você possui 10 mensagens não lidas
+                    <div class="mt-2 pt-2 border-top">
+                        <button data-bs-dismiss="toast" class="btn btn-danger">Descartar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        &copy; RNT projects - all rights reserved 2024
+                    </div>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li class="m-1">
+                                <a href="https://github.com/RNT13" target="_blank">
+                                    <img class="imgLink" src="./imagens/icone git hub.png" alt="icone do github">
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="#" target="_blank">
+                                    <img class="imgLink" src="./imagens/icone linkedin.png" alt="icone do linkedin">
+                                </a>
+                            </li>            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
