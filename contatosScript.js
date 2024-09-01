@@ -25,7 +25,6 @@ $(document).ready(function () {
             const linha = `
                 <tr>
                     <td>${nomeContato}</td>
-                    <td>${ddiContato}</td>
                     <td>${telefoneContato}</td>
                     <td id="iconeButton">
                         <button class=" btn btn-success btn-sm">+</button>

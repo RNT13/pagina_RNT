@@ -13,7 +13,7 @@ header {
     border-bottom: 10px solid #23463a ;
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 2;
 }
 
 header h1, section h2 {
